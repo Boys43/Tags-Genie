@@ -7,10 +7,10 @@ const Navbar = () => {
         <nav>
             <ul className='flex gap-5 items-center'>
                 <li className="group relative">
-                    <Link className="flex items-center hover:bg-gray-50/10 px-4 py-1 rounded transition-all duration-300 ease-in-out gap-2" href="products">
+                    <button className="flex items-center hover:bg-gray-50/10 px-4 py-1 rounded transition-all duration-300 ease-in-out gap-2" href="products">
                         Products
                         <ChevronDown className="group-hover:rotate-180 transition-transform duration-300 ease-in-out w-5 h-5" />
-                    </Link>
+                    </button>
 
                     <ul
                         className="absolute top-8 -left-4 bg-[var(--bg-secondary)] opacity-0 invisible translate-y-3 
@@ -19,7 +19,7 @@ const Navbar = () => {
                transition-all duration-300 ease-out flex items-center gap-4 py-3 px-8 rounded-2xl z-10"
                     >
                         <li className="flex flex-col gap-2 w-50">
-                            <Link className='flex flex-col gap-2 ' href="/yt-tags">
+                            <Link className='flex flex-col gap-2 ' href="/generate-tags">
                                 <span className='text-[var(--text-secondary)] font-semibold text-lg flex items-center gap-2'>
                                     <Tag /> Tags
                                 </span>
@@ -27,13 +27,13 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="flex flex-col gap-2 w-50">
-                            <Link className='flex flex-col gap-2 ' href="/yt-title">
+                            <Link className='flex flex-col gap-2 ' href="/generate-title">
                                 <span className='text-[var(--text-secondary)] font-semibold text-lg flex items-center gap-2'><Text /> Title</span>
                                 <p className='text-sm'>Generate titles for your YouTube videos</p>
                             </Link>
                         </li>
                         <li className="flex flex-col gap-2 w-50">
-                            <Link className='flex flex-col gap-2 ' href="/yt-description">
+                            <Link className='flex flex-col gap-2 ' href="/generate-description">
                                 <span className='text-[var(--text-secondary)] font-semibold text-lg flex items-center gap-2'   >
                                     <List /> Description
                                 </span>

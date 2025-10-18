@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Header = () => {
     return (
-        <header className='flex justify-between items-center py-5 px-5'>
+        <header className='flex relative z-2 justify-between items-center py-5 px-5'>
             <div className='flex items-center gap-5'>
                 <Link href="/">
                     <Image src="/logo.webp" alt="Logo" width={250} height={100} />
