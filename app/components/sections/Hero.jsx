@@ -1,11 +1,9 @@
-import Image from "next/image";
-import assets from "@/app/assets/assets";
-import { Search, SearchIcon } from "lucide-react";
+import { Search } from "lucide-react";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center text-center px-6 overflow-hidden">
+    <section className="max-w-7xl mx-auto relative flex flex-col items-center text-center px-6 overflow-hidden">
 
       {/* Title */}
       <h1 className="main-heading tracking-wide text-4xl sm:text-5xl md:text-6xl font-bold leading-tight z-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.15)]">
@@ -19,7 +17,7 @@ const Hero = () => {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-lg sm:text-lg mt-6 text-[var(--text-secondary)] max-w-2xl z-10">
+      <p className="hidden md:block text-lg sm:text-lg mt-6 text-[var(--text-secondary)] max-w-2xl z-10">
         Boost your reach with real live data-driven{" "}
         <span className="font-semibold text-[var(--btn-primary)]">tags</span>,{" "}
         <span className="font-semibold text-[var(--btn-primary)]">titles</span>, and{" "}
@@ -27,8 +25,8 @@ const Hero = () => {
       </p>
 
       {/* Input Form */}
-      <form className="relative mt-8 flex items-center justify-center w-full sm:w-auto">
-        <div className="relative group w-full sm:w-[400px] md:w-[500px] lg:w-[600px]">
+      <form className="relative mt-8 flex items-center justify-center w-full sm:w-auto max-w-full">
+        <div className="relative group w-full sm:w-[400px] md:w-[500px] lg:w-[600px] max-w-[calc(100vw-3rem)]">
           <input
             type="text"
             placeholder="Enter your video title..."
@@ -48,9 +46,16 @@ const Hero = () => {
         </div>
       </form>
 
+      <p className="md:hidden text-lg sm:text-lg mt-6 text-[var(--text-secondary)] max-w-2xl z-10">
+        Boost your reach with real live data-driven{" "}
+        <span className="font-semibold text-[var(--btn-primary)]">tags</span>,{" "}
+        <span className="font-semibold text-[var(--btn-primary)]">titles</span>, and{" "}
+        <span className="font-semibold text-[var(--btn-primary)]">descriptions</span> in seconds.
+      </p>
+
       {/* Buttons */}
-      <div className="mt-8 flex gap-6 z-10">
-        <button className="primary ">
+      <div className="mt-8 hidden md:flex flex-col md:flex-row gap-6 z-10">
+        <button className="primary">
           Get Started
         </button>
         <button className="secondary">
@@ -60,7 +65,7 @@ const Hero = () => {
 
       {/* Floating Tags Section */}
       <div className="relative w-full z-10">
-        
+
       </div>
     </section>
   );
