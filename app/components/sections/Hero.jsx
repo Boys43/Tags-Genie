@@ -1,9 +1,11 @@
+import Image from "next/image";
+import assets from "@/app/assets/assets";
 import { Search, SearchIcon } from "lucide-react";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative h-[calc(100vh-5rem)] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+    <section className="relative flex flex-col items-center text-center px-6 overflow-hidden">
 
       {/* Title */}
       <h1 className="main-heading tracking-wide text-4xl sm:text-5xl md:text-6xl font-bold leading-tight z-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.15)]">
@@ -38,6 +40,7 @@ const Hero = () => {
             type="submit"
             className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-lg 
                      text-gray-400 hover:text-[var(--btn-primary)] 
+                     cursor-pointer
                      transition-all duration-200 focus:text-[var(--btn-primary)]"
           >
             <Search size={20} />
@@ -50,10 +53,14 @@ const Hero = () => {
         <button className="primary ">
           Get Started
         </button>
-        <button className="secondary ">
+        <button className="secondary">
           Use Generators
         </button>
+      </div>
 
+      {/* Floating Tags Section */}
+      <div className="relative w-full z-10">
+        
       </div>
     </section>
   );

@@ -153,13 +153,15 @@ button.secondary {
 
 /* Button Hover */
 button.secondary:hover {
-  background-color: var(--btn-primary);
+  background-color: rgba(128, 128, 128, 0.554);
+  border-color: rgba(128, 128, 128, 0.554);
   box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
 
 /* Button Active */
 button.secondary:active {
-  background-color: #990000;
+  background-color: rgba(128, 128, 128, 0.554);
+  border-color: rgba(128, 128, 128, 0.554);
   transform: scale(0.98);
   /* slight press animation */
 }

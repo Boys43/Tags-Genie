@@ -2,13 +2,14 @@ import React from 'react'
 import Navbar from './Navbar'
 import Link from 'next/link'
 import Image from 'next/image'
+import assets from '@/app/assets/assets'
 
 const Header = () => {
     return (
-        <header className='flex relative z-2 justify-between items-center py-5 px-5'>
+        <header className='flex relative z-2 justify-between items-center py-7 w-[93%] mx-auto'>
             <div className='flex items-center gap-5'>
                 <Link href="/">
-                    <Image src="/logo.webp" alt="Logo" width={250} height={100} />
+                    <Image src={assets.seo} alt="Logo" width={80} height={80} />
                 </Link>
                 <Navbar />
             </div>
