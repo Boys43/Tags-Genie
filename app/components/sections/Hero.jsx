@@ -13,7 +13,7 @@ const Hero = () => {
         </span>
 
         {" "}
-        SEO RISER
+        SEO GENERATOR
       </h1>
 
       {/* Subtitle */}

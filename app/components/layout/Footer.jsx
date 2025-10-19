@@ -1,4 +1,6 @@
+import assets from '@/app/assets/assets'
 import React from 'react'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -7,20 +9,22 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 flex items-center justify-center">
-                
+          <div className="col-span-1 w-full">
+            <div className="flex justify-center items-center space-x-2 mb-4">
+              <div className="flex items-center justify-center">
+                <Image src={assets.viewRize} alt="View Rize" width={100} height={100} />
               </div>
-              <h3 className="text-xl font-tomorrow font-bold text-white">Tags Genie</h3>
             </div>
-            <p className="text-gray-400 text-sm max-w-md">
+            <p className="text-gray-400 text-sm max-w-md text-center">
               Generate powerful SEO tags and meta descriptions to boost your website's visibility and search engine rankings.
             </p>
           </div>
 
+          {/* Empty Space */}
+          <div className="col-span-1 w-full"></div>
+
           {/* Quick Links */}
-          <div>
+          <div className="col-span-1 w-full">
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
