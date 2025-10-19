@@ -9,7 +9,7 @@
   max-width: 100%;
 }
 
-section, div, main {
+section, main {
   overflow-x: hidden;
 }
 :root {

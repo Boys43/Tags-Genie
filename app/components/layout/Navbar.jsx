@@ -8,10 +8,6 @@ const Navbar = () => {
             {/* Mobile Hamburger Menu */}
             <div className="md:hidden">
                 <div className="group relative">
-                    <button className="flex items-center hover:bg-gray-50/10 p-2 rounded transition-all duration-300 ease-in-out cursor-pointer">
-                        <Menu className="w-6 h-6" />
-                    </button>
-
                     <ul className="absolute top-12 right-0 bg-[var(--bg-secondary)] opacity-0 invisible translate-y-3 
                                    shadow-xl min-w-max w-64
                                    group-hover:opacity-100 group-hover:visible group-hover:translate-y-2
@@ -39,7 +35,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <ul className='hidden md:flex gap-5 items-center'>
+            <ul className='flex gap-5 items-center'>
                 <li className="group relative">
                     <button className="flex items-center hover:bg-gray-50/10 px-4 py-1 rounded transition-all duration-300 ease-in-out gap-2 cursor-pointer">
                         Products

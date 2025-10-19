@@ -63,7 +63,7 @@ const WhyUs = () => {
           <h2 className="main-heading text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
             Why Choose{" "}
             <span className="font-tomorrow bg-gradient-to-r from-[#ff0000] to-[#ff4d4d] bg-clip-text text-transparent font-extrabold drop-shadow-[0_0_10px_rgba(255,0,0,0.4)]">
-              SEO Gen
+              VIEW Rize
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">
@@ -79,7 +79,7 @@ const WhyUs = () => {
               key={index}
               className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-md border border-gray-300/10 hover:bg-white/10 transition-all duration-300"
             >
-              <div className="text-3xl md:text-4xl font-bold text-[var(--btn-primary)] mb-2">
+              <div className="text-3xl overflow-hidden md:text-4xl font-bold text-[var(--btn-primary)] mb-2">
                 {stat.number}
               </div>
               <div className="text-[var(--text-secondary)] font-medium">
@@ -105,7 +105,7 @@ const WhyUs = () => {
                   {feature.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[var(--btn-primary)] transition-colors duration-300">
+              <h3 className="text-xl overflow-hidden font-bold text-[var(--text-primary)] mb-3 group-hover:text-[var(--btn-primary)] transition-colors duration-300">
                 {feature.title}
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
@@ -125,7 +125,7 @@ const WhyUs = () => {
             Ready to Boost Your YouTube Success?
           </h3>
           <p className="text-lg text-[var(--text-secondary)] mb-8 max-w-2xl mx-auto">
-            Join the thousands of creators already using SEO Gen to optimize their content and grow their channels.
+            Join the thousands of creators already using <span className="font-semibold text-[var(--btn-primary)]">View Rize</span> to optimize their content and grow their channels.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="primary flex items-center gap-2">

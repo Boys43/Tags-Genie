@@ -1,9 +1,7 @@
-import seo from "./SEO_Gen.webp";
-import hero from "./image.png";
+import viewRize from "./ViewRize.webp";
 
 const assets = {
-    seo,
-    hero
+    viewRize,
 }
 
 export default assets;
